@@ -1,13 +1,326 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text-wrap {
+  word-wrap: break-word;
+}
+
+.ingredient-list {
+  overflow-x: scroll;
+  min-height: 300px;
+  max-width: 100%;
+  background-size: 100%;
+  
+}
+
+.yours {
+  align-items: center;
+  margin-right: 1468px;
+}
+
+.toprow {
+  margin-top: 75px;
+}
+
+h5{
+  margin-left: 5mm;
+  font-style: bold;
+  font-size: 40px;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  color: #082b34;
+  text-align: left;
+  align-content: flex-end;
+  overflow-x: scroll;
+
+}
+
+.welcome{
+  margin-top: 25mm;
+}
+
+.head{
+  margin-top: 27mm;
+}
+
+h4{
+  font-style: bold;
+  font-size: xx-large;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  color: #263221
+}
+
+p {
+  margin-left: 5mm;
+  /* margin-right: 250mm; */
+  font-style: normal;
+  margin-bottom: 2mm;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  padding-right: 250mm;
+}
+
+#wrapper {
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
+}
+
+header {
+    overflow-x: scroll;
+    min-height: 670px;
+    max-height: 630px;
+    /* max-width: 100%;
+    min-width: 100%; */
+    /* width: fit-content; */
+    width: 100%;
+    text-align: left;
+    align-content: flex-end;
+    background-size: 100%;
+    background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/11/09/59695/wood-grain-06-920x518.jpg) ;
+    background-position: top;
+    margin-top: 0mm;
+    border-bottom: 10px solid #082b34;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.smoothies{
+  height: 540px;
+  width: 1300px;
+}
+h6 {
+  margin-left: 20px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  color: #378a78; 
+  font-family: 'Rouge Script', cursive; 
+  font-size: 90px; 
+  font-weight: bolder; 
+  line-height: 100px; 
+  text-shadow: 1px 1px 2px #082b34;
+}
+
+
+.ui.grid {
+  padding: 0px 20px;
+  text-align: center;
+  align-items: center;
+}
+
+
+.card {
+  text-align: center;
+  /* border: grey solid 1px; */
+  width: 360px;
+  height: 360px;
+  background: white;
+  border-radius: 50%;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 10px 12px #353333;
+  background-color: rgb(255, 255, 255);
+}
+
+.card:hover {
+  background-color: #00838d;
+  color: #DAE2ED;
+  cursor: pointer;
+ 
+}
+
+
+.column {
+  float: left;
+  /* width: 25%; */
+  padding: 20px;
+}
+
+h1 
+{ 
+  color: #ccbf9c; 
+  font-family: "Copperplate Gothic Light";
+
+  font-size: 60px; 
+  font-weight: normal; 
+  line-height: 100px; 
+  text-shadow: 1px 1px 2px #082b34; 
+}
+
+.ingredients {
+ background-image: 'public/wood-grain-15.jpg';
+}
+
+.your-ingredients {
+  background-size: 100%;
+  min-height: 142mm;
+  background-image: 'public/wood-grain-15.jpg';
+  border-bottom: 10px solid #082b34;
+}
+
+h2 {
+  font-size: large;
+  margin-top: 20px;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+small {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+.make-smoothie{
+  padding:0.3em 1.2em;
+  margin:0 0.1em 0.1em 0;
+  border:0.16em solid rgba(255,255,255,0);
+  border-radius:2em;
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-weight:300;
+  color:#467c50;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  transition: all 0.2s;
+  margin-left: 20px;
+  font-size: x-large;
+  margin-bottom: 10px;
+  position: flex;
+  bottom: 10px;
+  }
+
+  .make-smoothie:hover{
+  border-color: rgba(255,255,255,1);
+  background-color: #00838d;
+  color: #DAE2ED;
+  cursor: pointer;
+  }
+
+/* Popup style */
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  box-shadow: 10px 12px #353333;
+
+}
+ 
+.box {
+  position: relative;
+  width: 450px;
+  margin: 0 auto;
+  height: 700px;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #92AAC2;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+  align-items: center;
+  text-align: center;
+  color: #263221;
+  box-shadow: 10px 12px #353333;
+}
+ 
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+.making-smoothie {
+  width: 400px;
+  height: 300px;
+  align-items: center;
+  border-radius: 1px;
+  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
+  margin-bottom: 4mm;
+}
+
+.Filter {
+  font-size: xx-large;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+img {
+  height: 25mm;
+  width: 25mm
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: rgb(0, 63, 8);
+  border-bottom: 2px solid rgb(0, 63, 8);
+  transition: 0.1s;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+
+}
+
+nav a:hover,
+nav a:active {
+  color: rgb(37, 133, 53);
+  border-bottom: 2px solid rgb(37, 133, 53);
+}
+
+#home,
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 142mm;
+  padding: 1rem;
+  background-image: 'public/wood-grain-15.jpg';
+}
+
+#home {
+  background-color: rgb(26, 26, 26);
+}
+
+#about img {
+  max-height: 50%;
+}
+
+
+select {
+  font-size: x-large;
+  align-items: center;
+}
+
+.selectAll {
+  font-size: larger;
+  align-items: center;
 }
