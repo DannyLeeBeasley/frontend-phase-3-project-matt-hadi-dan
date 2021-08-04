@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       <h1>
-        World's Foremost Cafe
+        World's Foremost Café
         <span className="logo" role="img">
             ☕️
         </span>

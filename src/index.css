@@ -29,7 +29,7 @@ h5{
   margin-left: 5mm;
   font-style: bold;
   font-size: 40px;
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-family: "Copperplate Gothic Light";
   color: #082b34;
   text-align: left;
   align-content: flex-end;
@@ -48,16 +48,15 @@ h5{
 h4{
   font-style: bold;
   font-size: xx-large;
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-family: "Copperplate Gothic Light";
   color: #263221
 }
 
 p {
   margin-left: 5mm;
-  /* margin-right: 250mm; */
   font-style: normal;
   margin-bottom: 2mm;
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-family: "Copperplate Gothic Light";
   padding-right: 250mm;
 }
 
@@ -69,19 +68,17 @@ p {
 
 header {
     overflow-x: scroll;
-    min-height: 670px;
-    max-height: 630px;
-    /* max-width: 100%;
-    min-width: 100%; */
-    /* width: fit-content; */
-    width: 100%;
-    text-align: left;
+    min-height: 10%;
+    max-height: 50%;
+    max-width: 100%;
+    min-width: 100%;
+    text-align: center;
     align-content: flex-end;
     background-size: 100%;
     background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/11/09/59695/wood-grain-06-920x518.jpg) ;
     background-position: top;
     margin-top: 0mm;
-    border-bottom: 10px solid #082b34;
+    border-bottom: #082b34;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -112,7 +109,6 @@ h6 {
 
 .card {
   text-align: center;
-  /* border: grey solid 1px; */
   width: 360px;
   height: 360px;
   background: white;
@@ -133,7 +129,6 @@ h6 {
 
 .column {
   float: left;
-  /* width: 25%; */
   padding: 20px;
 }
 
@@ -162,11 +157,11 @@ h1
 h2 {
   font-size: large;
   margin-top: 20px;
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-family: "Copperplate Gothic Light";
 }
 
 small {
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-family: "Copperplate Gothic Light";
 }
 
 .make-smoothie{
@@ -175,7 +170,7 @@ small {
   border:0.16em solid rgba(255,255,255,0);
   border-radius:2em;
   box-sizing: border-box;
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-family: "Copperplate Gothic Light";
   font-weight:300;
   color:#467c50;
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
@@ -248,7 +243,7 @@ small {
 
 .Filter {
   font-size: xx-large;
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-family: "Copperplate Gothic Light";
 }
 
 img {
@@ -284,7 +279,7 @@ nav a {
   border-bottom: 2px solid rgb(0, 63, 8);
   transition: 0.1s;
   font-weight: bold;
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-family: "Copperplate Gothic Light";
 
 }
 
@@ -323,4 +318,16 @@ select {
 .selectAll {
   font-size: larger;
   align-items: center;
+}
+
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
