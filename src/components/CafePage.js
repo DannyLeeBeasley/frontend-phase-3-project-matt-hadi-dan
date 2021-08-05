@@ -9,10 +9,30 @@ function CafePage(){
     const [menuItems, setMenuItems] = useState([]);
     const [order, setOrder] = useState([]);
 
-    const addToCart = (menuItem) => {
-        const newOrder = [...order, menuItem];
-        setOrder(newOrder); 
-    }
+    // const addToCart = (menuItem) => {
+    //     const newOrder = [...order, menuItem];
+    //     setOrder(newOrder); 
+    // }
+
+    function addToCart(menuItem) {
+        //   e.preventDefault();
+          fetch("http://localhost:9292/order", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: name,
+              price: price,
+              image: image,
+              category: category,
+            }),
+          })
+            .then((r) => r.json())
+            .then((menuItem =>  setOrder([...order, menuItem]);
+        }
+        // return <form onSubmit={handleSubmit}>{/* controlled form code here*/}</form>;
+      }
     
     const removeFromOrder = (menuItem) => {
         const updatedOrder = [...order].filter((itemToRemove) => itemToRemove.id !== menuItem.id)
@@ -22,7 +42,7 @@ function CafePage(){
     useEffect(() => {
         fetch('http://localhost:9292/menu')
           .then((resp) => resp.json())
-          .then(setMenuItems);
+          .then(menu => setMenuItems(menu));
     }, []);
 
     return(

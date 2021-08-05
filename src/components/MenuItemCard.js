@@ -2,11 +2,12 @@ import React, { useState } from "react";
 
 function MenuItemCard({ menuItem, handleClick }) {
 
-    const [isInCart, setIsInCart] = useState(true);
+    // const [isInCart, setIsInCart] = useState(true);
 
-    function handleAddToCart() {
-        setIsInCart(isInCart => !isInCart)
-    }
+    // function handleAddToOrder() {
+    //     setIsInCart(isInCart => !isInCart)
+
+    // }
 
     return (
         <div className="ui column">
@@ -26,11 +27,11 @@ function MenuItemCard({ menuItem, handleClick }) {
                         <small>Price: ${menuItem.price}</small>
                     </div>
                 </div>
-                {isInCart ? (
-                    <button className="primary" onClick={handleAddToCart}>Add To Cart</button>
+                {/* {isInCart ? (
+                    <button className="primary" onClick={handleClick}>Add To Cart</button>
                 ) : (
-                    <button onClick={handleAddToCart}>Added To Cart</button>
-                )}
+                    <button>Added To Cart</button>
+                )} */}
             </div>
         </div>
     )
