@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 
-function MenuItemCard({ menuItem }) {
+function MenuItemCard({ menuItem, handleClick }) {
 
     const [isInCart, setIsInCart] = useState(true);
 
-    function handleToggleStock(){
+    function handleAddToCart() {
         setIsInCart(isInCart => !isInCart)
-      }
+    }
 
     return (
         <div className="ui column">
             <div
                 className="ui card"
                 key={menuItem.id}
-            // onClick={() => handleClick(menuItem)}
+                onClick={() => handleClick(menuItem)}
             >
                 <div className="header">
                     <h2>{menuItem.name}</h2>
@@ -24,28 +24,13 @@ function MenuItemCard({ menuItem }) {
                 <div className="content">
                     <div className="meta text-wrap">
                         <small>Price: ${menuItem.price}</small>
-                        {/* <br></br>
-                        <small>Calories: {menuItem.calories}</small>
-                        <br></br>
-                        <small>Protein: {menuItem.protein}</small>
-                        <br></br>
-                        <small>Fat: {menuItem.fat}</small> */}
                     </div>
                 </div>
                 {isInCart ? (
-                        <button className="primary" onClick={handleToggleStock}>Add To Cart</button>
-                    ) : (
-                        <button onClick={handleToggleStock}>Added To Cart</button>
-                    )}
-                {/* <div className="extra content">
-                    <small>
-                        Vitamins: {vitamins}
-                    </small>
-                    <br></br>
-                    <small>
-                        Minerals: {minerals}
-                    </small>
-                </div> */}
+                    <button className="primary" onClick={handleAddToCart}>Add To Cart</button>
+                ) : (
+                    <button onClick={handleAddToCart}>Added To Cart</button>
+                )}
             </div>
         </div>
     )

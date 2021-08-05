@@ -8,7 +8,7 @@ body {
   word-wrap: break-word;
 }
 
-.ingredient-list {
+.order-item-list {
   overflow-x: scroll;
   min-height: 300px;
   max-width: 100%;
@@ -147,7 +147,7 @@ h1
  background-image: 'public/wood-grain-15.jpg';
 }
 
-.your-ingredients {
+.your-order {
   background-size: 100%;
   min-height: 142mm;
   background-image: 'public/wood-grain-15.jpg';
@@ -164,7 +164,7 @@ small {
   font-family: "Copperplate Gothic Light";
 }
 
-.make-smoothie{
+.place-order{
   padding:0.3em 1.2em;
   margin:0 0.1em 0.1em 0;
   border:0.16em solid rgba(255,255,255,0);
@@ -182,7 +182,7 @@ small {
   bottom: 10px;
   }
 
-  .make-smoothie:hover{
+  .place-order:hover{
   border-color: rgba(255,255,255,1);
   background-color: #00838d;
   color: #DAE2ED;
@@ -232,7 +232,7 @@ small {
   font-size: 20px;
 }
 
-.making-smoothie {
+.placing-order {
   width: 400px;
   height: 300px;
   align-items: center;
