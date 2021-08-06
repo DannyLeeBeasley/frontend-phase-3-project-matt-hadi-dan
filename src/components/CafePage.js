@@ -25,12 +25,13 @@ function CafePage(){
       method: "DELETE",
     })
       .then((r) => r.json())
-      .then((deleteditemToRemove) => {const newMenu = menuItems.filter((menuItem) => {
-      if(menuItem.id !== itemToRemove.id)
-      return true;
-    })}
+      .then(() => {const updatedMenu = menuItems.filter((menuItem) => {
+        if(menuItem.id !== itemToRemove.id)
+        return true;
+        }
       )
-    setMenuItems(newMenu);
+      setMenuItems(updatedMenu);}
+    )
   } 
 
   return(

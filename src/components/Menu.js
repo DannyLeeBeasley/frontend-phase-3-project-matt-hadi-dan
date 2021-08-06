@@ -28,7 +28,7 @@ function Menu({ menuItems, handleClick, handleDeleteItem }) {
             <Filter onCategoryChange={handleCategoryChange} />
             {
               itemsToDisplay.map(menuItem => (
-                <MenuItemCard key={menuItem.id} menuItem={menuItem} handleClick={handleClick} category={menuItem.category} />
+                <MenuItemCard key={menuItem.id} menuItem={menuItem} handleClick={handleClick} handleDeleteItem={handleDeleteItem} category={menuItem.category} />
               ))
             }
           </div>

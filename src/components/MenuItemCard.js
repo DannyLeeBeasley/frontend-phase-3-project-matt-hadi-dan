@@ -27,7 +27,7 @@ function MenuItemCard({ menuItem, handleClick, handleDeleteItem}) {
                         <small>Price: ${menuItem.price}</small>
                     </div>
                 </div>
-                <button onClick={handleDeleteItem}>Remove Item</button>
+                <button onClick={(e) => handleDeleteItem(e.target)}>Remove Item</button>
                 {/* {isInCart ? (
                     <button className="primary" onClick={handleClick}>Add To Cart</button>
                 ) : (
