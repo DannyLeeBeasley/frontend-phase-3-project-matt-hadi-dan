@@ -23,7 +23,7 @@ function Menu({ menuItems, handleClick, handleDeleteItem }) {
           <div className="ui five column grid">
             <div className="row menu-item-list-row"></div>
 
-            <h1>Click Items To Add To Your Order</h1>
+            {/* <h3>Click Items To Add To Your Order</h3> */}
 
             <Filter onCategoryChange={handleCategoryChange} />
             {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import WelcomePage from "./WelcomePage";
+import WelcomePage from "./WelcomePage";
 import Order from "./Order";
 import Menu from "./Menu";
 import NewMenuItemForm from "./NewMenuItemForm";
@@ -20,19 +20,17 @@ function CafePage(){
         setMenuItems(newMenu); 
     }
 
-  const handleDeleteItem = (itemToRemove) => {
-    fetch(`http://localhost:9292/reviews/${itemToRemove.id}`, {
+ function handleDeleteItem(itemToDelete){
+
+  const updatedMenu = [...menuItems].filter((menuItem) => menuItem.id !== itemToDelete.id);
+    setMenuItems(updatedMenu);
+
+    fetch(`http://localhost:9292/menu/${itemToDelete.id}`, {
       method: "DELETE",
     })
-      .then((r) => r.json())
-      .then(() => {const updatedMenu = menuItems.filter((menuItem) => {
-        if(menuItem.id !== itemToRemove.id)
-        return true;
-        }
-      )
-      setMenuItems(updatedMenu);}
-    )
-  } 
+      .then((res) => res.json())
+      .then(() => console.log('item deleted'))
+  }
 
   return(
     <div>
@@ -46,7 +44,7 @@ function CafePage(){
       /> */}
       <Menu 
         menuItems = {menuItems}
-        handleDelteItem = {handleDeleteItem}
+        handleDeleteItem = {handleDeleteItem}
       />
     </div>
 )

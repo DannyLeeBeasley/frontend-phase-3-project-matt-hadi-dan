@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/11/09/59695/wood-grain-05.jpg);
 }
 
 .text-wrap {
@@ -76,9 +77,9 @@ header {
     align-content: flex-end;
     background-size: 100%;
     background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/11/09/59695/wood-grain-06-920x518.jpg) ;
-    background-position: top;
+    /* background-position: top; */
     margin-top: 0mm;
-    border-bottom: #082b34;
+    border-bottom: 10px #082b34;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -111,16 +112,16 @@ h6 {
   text-align: center;
   width: 360px;
   height: 360px;
-  background: white;
-  border-radius: 50%;
+  background: rgb(238, 232, 177);
+  /* border-radius: 50%; */
   display: inline-grid;
   margin: 1rem 2rem;
   box-shadow: 10px 12px #353333;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(238, 232, 177);
 }
 
 .card:hover {
-  background-color: #00838d;
+  background-color: #815f00;
   color: #DAE2ED;
   cursor: pointer;
  
@@ -156,6 +157,7 @@ h1
 
 h2 {
   font-size: large;
+  color: rgb(202, 169, 108);
   margin-top: 20px;
   font-family: "Copperplate Gothic Light";
 }
@@ -322,10 +324,10 @@ select {
 
 
 .button {
-  background-color: #4CAF50;
+  background-color: #4d3303;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1px 1px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

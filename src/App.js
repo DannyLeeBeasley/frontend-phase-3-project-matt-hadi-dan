@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Router>
         <Header/>
-        <NavBar/>
+        {/* <NavBar/> */}
         <CafePage/>
       </Router>
     </div>

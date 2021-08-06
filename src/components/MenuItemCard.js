@@ -13,7 +13,7 @@ function MenuItemCard({ menuItem, handleClick, handleDeleteItem}) {
         <div className="ui column">
             <div
                 className="ui card"
-                key={menuItem.id}
+                id={menuItem.id}
                 // onClick={() => handleClick(menuItem)}
             >
                 <div className="header">
@@ -24,10 +24,10 @@ function MenuItemCard({ menuItem, handleClick, handleDeleteItem}) {
                 </div>
                 <div className="content">
                     <div className="meta text-wrap">
-                        <small>Price: ${menuItem.price}</small>
+                        <large>Price: ${menuItem.price}</large>
                     </div>
                 </div>
-                <button onClick={(e) => handleDeleteItem(e.target)}>Remove Item</button>
+                <button onClick={(e) => handleDeleteItem(e.target)} id={menuItem.id} className="button">Remove Item</button>
                 {/* {isInCart ? (
                     <button className="primary" onClick={handleClick}>Add To Cart</button>
                 ) : (
