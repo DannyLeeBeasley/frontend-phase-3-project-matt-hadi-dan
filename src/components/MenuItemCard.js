@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function MenuItemCard({ menuItem, handleClick }) {
+function MenuItemCard({ menuItem, handleClick, handleDeleteItem}) {
 
     // const [isInCart, setIsInCart] = useState(true);
 
@@ -14,7 +14,7 @@ function MenuItemCard({ menuItem, handleClick }) {
             <div
                 className="ui card"
                 key={menuItem.id}
-                onClick={() => handleClick(menuItem)}
+                // onClick={() => handleClick(menuItem)}
             >
                 <div className="header">
                     <h2>{menuItem.name}</h2>
@@ -27,6 +27,7 @@ function MenuItemCard({ menuItem, handleClick }) {
                         <small>Price: ${menuItem.price}</small>
                     </div>
                 </div>
+                <button onClick={handleDeleteItem}>Remove Item</button>
                 {/* {isInCart ? (
                     <button className="primary" onClick={handleClick}>Add To Cart</button>
                 ) : (

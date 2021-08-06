@@ -3,7 +3,7 @@ import MenuItemCard from "./MenuItemCard";
 import Filter from "./Filter";
 
 
-function Menu({ menuItems, handleClick }) {
+function Menu({ menuItems, handleClick, handleDeleteItem }) {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   function handleCategoryChange(e) {
